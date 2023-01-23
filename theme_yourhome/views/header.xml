@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="custom_header" name="Custom Header" inherit_id="website.layout">
+        <xpath expr="//header" position="replace">
+            <header>
+                <div class="container">
+                    <nav class="navbar navbar-expand-lg bg-body-tertiary py-3">
+                        <div class="container-fluid">
+                            <a class="navbar-brand" href="#">
+                                <img style="height:40px; width:auto;" src="/theme_yourhome/static/src/img/disney.png" alt="Logo" />
+                            </a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <!-- Menu -->
+                                    <t t-foreach="website.menu_id.child_id" t-as="submenu">
+                                        <t t-call="website.submenu">
+                                            <t t-set="item_class" t-valuef="nav-item font-weight-medium"/>
+                                            <t t-set="link_class" t-valuef="nav-link"/>
+                                        </t>
+                                    </t>
+                                </ul>
+                            </div>
+                            <div class="d-flex nav-item font-weight-medium">
+                                <ul class="navbar-nav">
+                                    <!-- Sign In -->
+                                    <t t-call="portal.placeholder_user_sign_in">
+                                        <t t-set="_item_class" t-valuef="nav-item ms-lg-auto"/>
+                                        <t t-set="_link_class" t-valuef="nav-link fw-bold"/>
+                                    </t>
+                                    <!-- User Dropdown -->
+                                    <t t-call="portal.user_dropdown">
+                                        <t t-set="_user_name" t-value="true"/>
+                                        <t t-set="_item_class" t-valuef="nav-item dropdown ms-lg-auto"/>
+                                        <t t-set="_link_class" t-valuef="nav-link fw-bold"/>
+                                    </t>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+        </xpath>
+    </template>
+
+</odoo>

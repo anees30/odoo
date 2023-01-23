@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="property_agent" name="Property Agent">
+        <section class="property-agents border-none company-visible">
+            <div class="container">
+                <div class="text-center py-4">
+                    <h2 class="h1">Property Agents</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras molestie vestibulum lorem. Aenean efficitur sit amet sapien at commodo.<br/>
+                                    Proin malesuada semper lectus, eget ornare.</p>
+                </div>
+                <div class="row pb-5">
+                    <div class="col text-center">
+                        <div class="rounded-circle mx-auto">
+                            <img class="agent-img-container rounded" src="/theme_yourhome/static/src/img/agent1.png" alt="Agent 1"/>
+                        </div>
+                        <h5 class="m-0 mt-3">Agent Name</h5>
+                        <div class="company-name">Company Name</div>
+                    </div>
+                    <div class="col text-center">
+                        <div class="rounded-circle mx-auto">
+                            <img class="agent-img-container rounded" src="/theme_yourhome/static/src/img/agent2.png" alt="Agent 1"/>
+                        </div>
+                        <h5 class="m-0 mt-3">Agent Name</h5>
+                        <div class="company-name">Company Name</div>
+                    </div>
+                    <div class="col text-center">
+                        <div class="rounded-circle mx-auto">
+                            <img class="agent-img-container rounded" src="/theme_yourhome/static/src/img/agent3.png" alt="Agent 1"/>
+                        </div>
+                        <h5 class="m-0 mt-3">Agent Name</h5>
+                        <div class="company-name">Company Name</div>
+                    </div>
+                    <div class="col text-center">
+                        <div class="rounded-circle mx-auto">
+                            <img class="agent-img-container rounded" src="/theme_yourhome/static/src/img/agent4.png" alt="Agent 1"/>
+                        </div>
+                        <h5 class="m-0 mt-3">Agent Name</h5>
+                        <div class="company-name">Company Name</div>
+                    </div>
+                    <div class="col text-center">
+                        <div class="rounded-circle mx-auto">
+                            <img class="agent-img-container rounded" src="/theme_yourhome/static/src/img/agent5.png" alt="Agent 1"/>
+                        </div>
+                        <h5 class="m-0 mt-3">Agent Name</h5>
+                        <div class="company-name">Company Name</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+</odoo>

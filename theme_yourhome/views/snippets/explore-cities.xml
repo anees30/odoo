@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="explore_cities" name="Explore Cities - Dynamic">
+        <section class="explore-cities">
+            <div class="container">
+                <div class="text-center py-5">
+                    <h2 class="h1">
+                                        Explore Cities
+                    </h2>
+                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras molestie vestibulum lorem. Aenean efficitur sit amet sapien at commodo.<br/>
+                                        Proin malesuada semper lectus, eget ornare
+                    </p>
+                </div>
+                <div class="row justify-content-center my-4" id="yh-cities-row"></div>
+            </div>
+        </section>
+    </template>
+
+</odoo>

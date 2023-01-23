@@ -1,0 +1,44 @@
+.font-weight-medium {
+    font-weight: 600;
+}
+
+.footer-logo {
+    height: 50px;
+    width: auto;
+}
+
+.explore-cities, .new-properties {
+    .country-image{
+        object-fit: cover;
+    }
+}
+
+.new-properties {
+
+    .property-image {
+        object-fit: cover;
+        width: 300px;
+    }
+
+}
+
+// .property-agents {
+//     .agent-img-container {
+//         object-fit: cover;
+//         width: 120px;
+//         height: 120px;
+//     }
+// }
+
+.our-services {
+    background-color:#eee;
+
+    .icon {
+        height:70px;
+        width:70px;
+
+        i {
+            font-size:42px;
+        }
+    }
+}

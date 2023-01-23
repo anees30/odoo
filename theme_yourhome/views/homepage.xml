@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="custom_homepage" inherit_id="website.homepage" name="Home">
+        <xpath expr="//t[@t-call='website.layout']" position="replace">
+            <t t-call="website.layout">
+                <t t-set="pageName" t-value="'homepage'"/>
+                
+                <div id="wrap" class="oe_structure oe_empty">
+                    <div class="oe_structure" />
+                    <section class="s_cover parallax bg-black-50 pt96 pb96" data-scroll-background-ratio="1">
+                        <span class="s_parallax_bg oe_img_bg" style="background-image: url('/theme_yourhome/static/src/img/home-bg.jpg');"/>
+                        <div class="container s_allow_columns">
+                            <h1 style="text-align: center;">
+                                <font style="font-size: 62px; font-weight: bold;">Find your new Home</font>
+                            </h1>
+                            <p class="lead" style="text-align: center;">
+                                Write one or two paragraphs describing your product, services or a specific feature.<br/>
+                                To be successful your content needs to be useful to your readers.</p>
+                            <p style="text-align: center;">
+                                <a t-att-href="cta_btn_href" class="btn btn-primary mb-2 mt-3 rounded-circle px-5">
+                                    <t t-esc="cta_btn_text">Learn More</t>
+                                </a>
+                            </p>
+                        </div>
+                    </section>
+
+                    <section class="explore-cities">
+                        <div class="container">
+                            <div class="text-center py-5">
+                                <h2 class="h1">
+                                        Explore Cities
+                                </h2>
+                                <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras molestie vestibulum lorem. Aenean efficitur sit amet sapien at commodo.<br/>
+                                        Proin malesuada semper lectus, eget ornare
+                                </p>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-lg-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="me-3 rounded">
+                                            <img class="country-image rounded" src="/theme_yourhome/static/src/img/city1.png" alt="City Name"/>
+                                        </div>
+                                        <div>
+                                            <h5 class="mb-0">Country Name</h5>
+                                            <div>City Name</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="me-3 rounded">
+                                            <img class="country-image rounded" src="/theme_yourhome/static/src/img/city2.png" alt="City Name"/>
+                                        </div>
+                                        <div>
+                                            <h5 class="mb-0">Country Name</h5>
+                                            <div>City Name</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="me-3 rounded">
+                                            <img class="country-image rounded" src="/theme_yourhome/static/src/img/city3.png" alt="City Name"/>
+                                        </div>
+                                        <div>
+                                            <h5 class="mb-0">Country Name</h5>
+                                            <div>City Name</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="me-3 rounded">
+                                            <img class="country-image rounded" src="/theme_yourhome/static/src/img/city4.png" alt="City Name"/>
+                                        </div>
+                                        <div>
+                                            <h5 class="mb-0">Country Name</h5>
+                                            <div>City Name</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt-4">
+                                <div class="col-lg-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="me-3 rounded">
+                                            <img class="country-image rounded" src="/theme_yourhome/static/src/img/city5.png" alt="City Name"/>
+                                        </div>
+                                        <div>
+                                            <h5 class="mb-0">Country Name</h5>
+                                            <div>City Name</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="me-3 rounded">
+                                            <img class="country-image rounded" src="/theme_yourhome/static/src/img/city6.png" alt="City Name"/>
+                                        </div>
+                                        <div>
+                                            <h5 class="mb-0">Country Name</h5>
+                                            <div>City Name</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="me-3 rounded">
+                                            <img class="country-image rounded" src="/theme_yourhome/static/src/img/city7.png" alt="City Name"/>
+                                        </div>
+                                        <div>
+                                            <h5 class="mb-0">Country Name</h5>
+                                            <div>City Name</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="me-3 rounded">
+                                            <img class="country-image rounded" src="/theme_yourhome/static/src/img/city8.png" alt="City Name"/>
+                                        </div>
+                                        <div>
+                                            <h5 class="mb-0">Country Name</h5>
+                                            <div>City Name</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="new-properties o_cc5 mt-5">
+                        <div class="container py-4">
+                            <div class="d-flex align-item-center">
+                                <h2 class="h1">New Properties</h2>
+                                <a href="#" class="ms-auto btn btn-primary mb-2 mt-3 rounded-circle">
+                                        View All Properties
+                                </a>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-lg-3">
+                                    <div class="me-3 rounded">
+                                        <img class="property-image rounded" src="/theme_yourhome/static/src/img/property1.png" alt="Property 1"/>
+                                    </div>
+                                    <div class="mt-2">
+                                        <span class="text-muted d-block">Apartment</span>
+                                        <span class="text-primary d-block h4 m-0">100,000 USD</span>
+                                        <span class="text-light d-block">Location of the property</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="me-3 rounded">
+                                        <img class="property-image rounded" src="/theme_yourhome/static/src/img/property2.png" alt="Property 1"/>
+                                    </div>
+                                    <div class="mt-2">
+                                        <span class="text-muted d-block">Apartment</span>
+                                        <span class="text-primary d-block h4 m-0">100,000 USD</span>
+                                        <span class="text-light d-block">Location of the property</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="me-3 rounded">
+                                        <img class="property-image rounded" src="/theme_yourhome/static/src/img/property3.png" alt="Property 1"/>
+                                    </div>
+                                    <div class="mt-2">
+                                        <span class="text-muted d-block">Apartment</span>
+                                        <span class="text-primary d-block h4 m-0">100,000 USD</span>
+                                        <span class="text-light d-block">Location of the property</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="me-3 rounded">
+                                        <img class="property-image rounded" src="/theme_yourhome/static/src/img/property4.png" alt="Property 1"/>
+                                    </div>
+                                    <div class="mt-2">
+                                        <span class="text-muted d-block">Apartment</span>
+                                        <span class="text-primary d-block h4 m-0">100,000 USD</span>
+                                        <span class="text-light d-block">Location of the property</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="property-agents">
+                        <div class="container">
+                            <div class="text-center py-4">
+                                <h2 class="h1">Property Agents</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras molestie vestibulum lorem. Aenean efficitur sit amet sapien at commodo.<br/>
+                                        Proin malesuada semper lectus, eget ornare.</p>
+                            </div>
+                            <div class="d-flex justify-content-center pb-5">
+                                <div class="mx-5 text-center">
+                                    <div>
+                                        <img class="agent-img-container rounded" src="/theme_yourhome/static/src/img/agent1.png" alt="Agent 1"/>
+                                    </div>
+                                    <h5 class="m-0 mt-3">Agent Name</h5>
+                                    <div>Company Name</div>
+                                </div>
+                                <div class="mx-5 text-center">
+                                    <div>
+                                        <img class="agent-img-container rounded" src="/theme_yourhome/static/src/img/agent2.png" alt="Agent 1"/>
+                                    </div>
+                                    <h5 class="m-0 mt-3">Agent Name</h5>
+                                    <div>Company Name</div>
+                                </div>
+                                <div class="mx-5 text-center">
+                                    <div>
+                                        <img class="agent-img-container rounded" src="/theme_yourhome/static/src/img/agent3.png" alt="Agent 1"/>
+                                    </div>
+                                    <h5 class="m-0 mt-3">Agent Name</h5>
+                                    <div>Company Name</div>
+                                </div>
+                                <div class="mx-5 text-center">
+                                    <div>
+                                        <img class="agent-img-container rounded" src="/theme_yourhome/static/src/img/agent4.png" alt="Agent 1"/>
+                                    </div>
+                                    <h5 class="m-0 mt-3">Agent Name</h5>
+                                    <div>Company Name</div>
+                                </div>
+                                <div class="mx-5 text-center">
+                                    <div>
+                                        <img class="agent-img-container rounded" src="/theme_yourhome/static/src/img/agent5.png" alt="Agent 1"/>
+                                    </div>
+                                    <h5 class="m-0 mt-3">Agent Name</h5>
+                                    <div>Company Name</div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="s_cover parallax bg-black-50 pt96 pb96" data-scroll-background-ratio="1">
+                        <span class="s_parallax_bg oe_img_bg" style="background-image: url('/theme_yourhome/static/src/img/contact-bg.jpg');"/>
+                        <div class="container s_allow_columns">
+                            <div class="row">
+                                <div class="col-lg-7">
+                                    <h2 class="h1">We help you find <br class="d-none d-block-lg"/>
+                                            your new home</h2>
+                                    <p class="pr-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras molestie vestibulum lorem. Aenean efficitur sit amet sapien at commodo. Proin malesuada semper lectus, eget ornare.</p>
+                                    <a href="#" class="btn btn-primary mb-2 mt-3 rounded-circle">Learn More</a>
+                                </div>
+                                <div class="col-lg-5 p-5 o_cc1">
+                                    <form>
+                                        <div class="form-group mb-2">
+                                            <label for="name">Name</label>
+                                            <input type="text" class="form-control" placeholder="Your name" />
+                                        </div>
+                                        <div class="form-group mb-2">
+                                            <label for="email">Email</label>
+                                            <input type="email" class="form-control" placeholder="Your email" />
+                                        </div>
+                                        <div class="form-group mb-2">
+                                            <label for="name">Contact</label>
+                                            <input type="text" class="form-control" placeholder="Your contact number" />
+                                        </div>
+                                        <button type="submit" class="btn btn-primary w-100 mt-2">Submit</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="oe_structure" />
+                </div>
+                
+            </t>
+        </xpath>
+    </template>
+
+</odoo>

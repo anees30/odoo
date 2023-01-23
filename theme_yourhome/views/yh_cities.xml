@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="yh_cities_form" model="ir.ui.view">
+        <field name="name">YourHome Cities: form</field>
+        <field name="model">yh.cities</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <field name="image" widget="image" class="oe_avatar"/>
+                    <group>
+                        <field name="country_id"/>
+                        <field name="state_id"/>
+                        <field name="description"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="yh_cities_list" model="ir.ui.view">
+        <field name="name">YourHome Cities: list</field>
+        <field name="model">yh.cities</field>
+        <field name="arch" type="xml">
+            <tree string="Courses">
+                <field name="country_id"/>
+                <field name="state_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="yh_cities_action" model="ir.actions.act_window">
+        <field name="name">Cities</field>
+        <field name="res_model">yh.cities</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Add new cities...</p>
+        </field>
+    </record>
+
+
+    <!-- <menuitem id="menu_yh_root" name="Your Home" sequence="11" parent="website.menu_site"/> -->
+    <menuitem id="menu_yh_cities" name="Cities" parent="website.menu_reporting" sequence="1" action="theme_yourhome.yh_cities_action"/>
+
+</odoo>

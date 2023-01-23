@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="custom_footer" name="Custom Footer" inherit_id="website.layout">
+        <xpath expr="//footer" position="replace">
+            <footer>
+                <div class="container py-5 border-top">
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <img class="footer-logo" src="/theme_yourhome/static/src/img/disney.png" alt="Logo" />
+                            <p class="py-3">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                            </p>
+                            <div class="s_social_media text-start no_icon_color o_not_editable" data-snippet="s_social_media" data-name="Social Media" contenteditable="false">
+                                <h5 class="s_social_media_title d-none" contenteditable="true">Follow us</h5>
+                                <a href="/website/social/facebook" class="s_social_media_facebook" target="_blank">
+                                    <i class="fa fa-facebook m-1 rounded-circle border"/>
+                                </a>
+                                <a href="/website/social/twitter" class="s_social_media_twitter" target="_blank">
+                                    <i class="fa fa-twitter m-1 rounded-circle border"/>
+                                </a>
+                                <a href="/website/social/linkedin" class="s_social_media_linkedin" target="_blank">
+                                    <i class="fa fa-linkedin m-1 rounded-circle border"/>
+                                </a>
+                                <a href="/website/social/instagram" class="s_social_media_instagram" target="_blank">
+                                    <i class="fa fa-instagram m-1 rounded-circle border"/>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-2">
+                            <h5>Quick Links</h5>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="#">Products</a>
+                                </li>
+                                <li>
+                                    <a href="#">Services</a>
+                                </li>
+                                <li>
+                                    <a href="#">Legal</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2">
+                            <h5>Top Locations</h5>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#">Location 1</a>
+                                </li>
+                                <li>
+                                    <a href="#">Location 2</a>
+                                </li>
+                                <li>
+                                    <a href="#">Location 3</a>
+                                </li>
+                                <li>
+                                    <a href="#">Location 4</a>
+                                </li>
+                                <li>
+                                    <a href="#">Location 5</a>
+                                </li>
+                                <li>
+                                    <a href="#">Location 6</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3">
+                            <h5>Newsletter</h5>
+                            <form>
+                                <div class="input-group mb-3">
+                                    <input type="email" class="form-control" placeholder="Your email" aria-label="Your email" aria-describedby="button-addon2" />
+                                    <button class="btn btn-primary" type="button" id="button-addon2">Submit</button>
+                                </div>
+                            </form>
+                            <p class="m-0">Contact Us</p>
+                            <div class="h2 m-0"><a href="tel:1234567890">1234567890</a></div>
+                            <p class="m-0"><a href="mailto:info@youremail.com" class="text-dark">info@youremail.com</a></p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </xpath>
+    </template>
+
+</odoo>
